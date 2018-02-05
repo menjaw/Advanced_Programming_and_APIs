@@ -13,39 +13,26 @@ import interfaces.Board;
  */
 public class Implement_Board implements Board {
 
-    public static void main(String[] args) {
-        System.out.println();
-    }
     //Variables
-    int[][] board = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int[][] board;
+    int rows = 3;
+    int columns = 3;
+
+    //constructor
+    public Implement_Board() {
+        board = new int[rows][columns];
+    }
 
     //Methods
     @Override
-    public void getBoard(int index) {
-        // print out the array
-        for (int row = 0; row < board.length; row++) {
-            System.out.print("Row " + row + ": ");
-            for (int col = 0; col < board[row].length; col++) {
-                System.out.print(board[row][col] + " ");
-            }
-            System.out.println();
-        }
+    public int getBoard(int index) {
+        return 0;
     }
 
     @Override
-    public void setValue(int index, int value) {
-        board[index][index] = value;
+    public void setValue(int row, int column, int value) {
+        board[row][column] = value;
     }
 
-//        int rows = 3;
-//    int columns = 3;
-//    //Constructor to initilize board
-//    public Implement_Board() {
-//        board = new int[rows][columns];
-//    }
-//   @Override
-//    public int getBoard(int index) {
-//
-//        return board[rows][columns];
-//    }
+
 }

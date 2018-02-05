@@ -10,6 +10,6 @@ package interfaces;
  * @author Menja
  */
 public interface Board {
-    public void getBoard(int index);
-    public void setValue(int index, int value);
+    public int getBoard(int index);
+    public void setValue(int row, int column, int value);
 }
